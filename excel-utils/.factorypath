@@ -1,0 +1,14 @@
+<factorypath>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/adrianwalker/multiline-string/0.1.1/multiline-string-0.1.1.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="EXTJAR" id="C:\Program Files\Java\jdk1.6.0_45\jre\..\lib\tools.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/jsoup/jsoup/1.7.3/jsoup-1.7.3.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/apache/poi/poi/3.9/poi-3.9.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/commons-codec/commons-codec/1.5/commons-codec-1.5.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/apache/poi/poi-ooxml/3.9/poi-ooxml-3.9.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/apache/poi/poi-ooxml-schemas/3.9/poi-ooxml-schemas-3.9.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/apache/xmlbeans/xmlbeans/2.3.0/xmlbeans-2.3.0.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/stax/stax-api/1.0.1/stax-api-1.0.1.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="PLUGIN" id="org.eclipse.jst.ws.annotations.core" enabled="true" runInBatchMode="false"/>
+</factorypath>
