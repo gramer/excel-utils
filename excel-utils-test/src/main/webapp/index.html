@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>grid to excel test</title>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+	<button id='excelBtn'>excel</button>
+	<div id='mainGrid'>
+		<table width="100%">
+			<thead>
+				<tr>
+					<th>구분</th>
+					<th colspan="5">수주액</th>
+					<th colspan="3">매출액</th>
+					<th colspan="4">진행중(VRB 시행 건) 포함</th>
+				</tr>
+				<tr>
+					<th width="12%">본부/팀</th>
+
+					<th width="7.5%">연간목표</th>
+					<th width="7.5%">누계목표</th>
+					<th width="7.5%">실적</th>
+					<th width="7.5%">누계진척도</th>
+					<th width="7.5%">연간진척도</th>
+
+					<th width="7.5%">연간목표</th>
+					<th width="7.5%">Sold</th>
+					<th width="7.5%">연간진척도</th>
+
+					<th width="7.5%">수주액</th>
+					<th width="7.5%">예상진척도</th>
+					<th width="7.5%">매출액</th>
+					<th width="7.5%">예상진척도</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td colspan="13" style="height: 10px; border-style: none;"></td>
+				</tr>
+				<tr>
+					<th class="text-align-left">전사 계</th>
+
+					<th class="text-align-right font-size-large">1,521.3</th>
+					<th class="text-align-right font-size-large">582.4</th>
+					<th class="text-align-right font-size-large">73.0</th>
+					<th class="text-align-right font-size-large">12.5%</th>
+					<th class="text-align-right background-green font-size-large">4.8%</th>
+					<th class="text-align-right font-size-large">1,299.9</th>
+					<th class="text-align-right font-size-large">556.7</th>
+					<th class="text-align-right background-green font-size-large">42.8%</th>
+					<th class="text-align-right font-size-large">359.4</th>
+					<th class="text-align-right background-green font-size-large">23.6%</th>
+					<th class="text-align-right font-size-large">732.4</th>
+					<th class="text-align-right background-green font-size-large">56.3%</th>
+				</tr>
+
+				<tr>
+					<td colspan="13" style="height: 10px; border-style: none;"></td>
+				</tr>
+				<tr style="background-color: #e3e3e3; font-weight: bold;">
+					<td class="indent-level0">대전지사 계</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">-</td>
+					<td class="text-align-right background-green font-size-large">-</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right background-green font-size-large">-</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right background-green font-size-large">-</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right background-green font-size-large">-</td>
+				</tr>
+				<tr>
+					<td class="indent-level1"><a href="/vrb/app/weekly?selectedTeamId=0100000248"> 대전지사 </a></td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">-</td>
+					<td class="text-align-right background-wheat font-size-large">-</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right background-wheat font-size-large">-</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right background-wheat font-size-large">-</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right background-wheat font-size-large">-</td>
+				</tr>
+				<tr>
+					<td colspan="13" style="height: 10px; border-style: none;"></td>
+				</tr>
+				<tr style="background-color: #e3e3e3; font-weight: bold;">
+					<td class="indent-level0">CTO 계</td>
+					<td class="text-align-right font-size-large">372.5</td>
+					<td class="text-align-right font-size-large">307.1</td>
+					<td class="text-align-right font-size-large">0.2</td>
+					<td class="text-align-right font-size-large">0.1%</td>
+					<td class="text-align-right background-green font-size-large">0.1%</td>
+					<td class="text-align-right font-size-large">449.8</td>
+					<td class="text-align-right font-size-large">370.6</td>
+					<td class="text-align-right background-green font-size-large">82.4%</td>
+					<td class="text-align-right font-size-large">9.8</td>
+					<td class="text-align-right background-green font-size-large">2.6%</td>
+					<td class="text-align-right font-size-large">380.1</td>
+					<td class="text-align-right background-green font-size-large">84.5%</td>
+				</tr>
+				<tr style="background-color: #e3e3e3; font-weight: bold;">
+					<td class="indent-level1">손보사업부 계</td>
+					<td class="text-align-right font-size-large">203.0</td>
+					<td class="text-align-right font-size-large">192.0</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">0.0%</td>
+					<td class="text-align-right background-wheat font-size-large">0.0%</td>
+					<td class="text-align-right font-size-large">203.0</td>
+					<td class="text-align-right font-size-large">176.5</td>
+					<td class="text-align-right background-wheat font-size-large">86.9%</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right background-wheat font-size-large">0.0%</td>
+					<td class="text-align-right font-size-large">176.5</td>
+					<td class="text-align-right background-wheat font-size-large">86.9%</td>
+				</tr>
+				<tr>
+					<td class="indent-level2"><a href="/vrb/app/weekly?selectedTeamId=0100000010"> 손해보험 </a></td>
+					<td class="text-align-right font-size-large">203.0</td>
+					<td class="text-align-right font-size-large">192.0</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">0.0%</td>
+					<td class="text-align-right background-wheat font-size-large">0.0%</td>
+					<td class="text-align-right font-size-large">203.0</td>
+					<td class="text-align-right font-size-large">176.5</td>
+					<td class="text-align-right background-wheat font-size-large">86.9%</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right background-wheat font-size-large">0.0%</td>
+					<td class="text-align-right font-size-large">176.5</td>
+					<td class="text-align-right background-wheat font-size-large">86.9%</td>
+				</tr>
+				<tr style="background-color: #e3e3e3; font-weight: bold;">
+					<td class="indent-level1">넥스원사업부 계</td>
+					<td class="text-align-right font-size-large">149.1</td>
+					<td class="text-align-right font-size-large">103.4</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">0.0%</td>
+					<td class="text-align-right background-wheat font-size-large">0.0%</td>
+					<td class="text-align-right font-size-large">228.5</td>
+					<td class="text-align-right font-size-large">190.8</td>
+					<td class="text-align-right background-wheat font-size-large">83.5%</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right background-wheat font-size-large">0.0%</td>
+					<td class="text-align-right font-size-large">190.8</td>
+					<td class="text-align-right background-wheat font-size-large">83.5%</td>
+				</tr>
+				<tr>
+					<td class="indent-level2"><a href="/vrb/app/weekly?selectedTeamId=0100000217"> 넥스원 </a></td>
+					<td class="text-align-right font-size-large">149.1</td>
+					<td class="text-align-right font-size-large">103.4</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">0.0%</td>
+					<td class="text-align-right background-wheat font-size-large">0.0%</td>
+					<td class="text-align-right font-size-large">228.5</td>
+					<td class="text-align-right font-size-large">190.8</td>
+					<td class="text-align-right background-wheat font-size-large">83.5%</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right background-wheat font-size-large">0.0%</td>
+					<td class="text-align-right font-size-large">190.8</td>
+					<td class="text-align-right background-wheat font-size-large">83.5%</td>
+				</tr>
+				<tr style="background-color: #e3e3e3; font-weight: bold;">
+					<td class="indent-level1">Competency Center 계</td>
+					<td class="text-align-right font-size-large">20.4</td>
+					<td class="text-align-right font-size-large">11.8</td>
+					<td class="text-align-right font-size-large">0.2</td>
+					<td class="text-align-right font-size-large">2.0%</td>
+					<td class="text-align-right background-wheat font-size-large">1.2%</td>
+					<td class="text-align-right font-size-large">18.3</td>
+					<td class="text-align-right font-size-large">3.4</td>
+					<td class="text-align-right background-wheat font-size-large">18.4%</td>
+					<td class="text-align-right font-size-large">9.8</td>
+					<td class="text-align-right background-wheat font-size-large">47.8%</td>
+					<td class="text-align-right font-size-large">12.8</td>
+					<td class="text-align-right background-wheat font-size-large">70.1%</td>
+				</tr>
+				<tr>
+					<td class="indent-level2"><a href="/vrb/app/weekly?selectedTeamId=0100000204"> IT혁신팀 </a></td>
+					<td class="text-align-right font-size-large">20.4</td>
+					<td class="text-align-right font-size-large">11.8</td>
+					<td class="text-align-right font-size-large">0.2</td>
+					<td class="text-align-right font-size-large">2.0%</td>
+					<td class="text-align-right background-wheat font-size-large">1.2%</td>
+					<td class="text-align-right font-size-large">18.3</td>
+					<td class="text-align-right font-size-large">3.4</td>
+					<td class="text-align-right background-wheat font-size-large">18.4%</td>
+					<td class="text-align-right font-size-large">9.8</td>
+					<td class="text-align-right background-wheat font-size-large">47.8%</td>
+					<td class="text-align-right font-size-large">12.8</td>
+					<td class="text-align-right background-wheat font-size-large">70.1%</td>
+				</tr>
+				<tr>
+					<td colspan="13" style="height: 10px; border-style: none;"></td>
+				</tr>
+				<tr style="background-color: #e3e3e3; font-weight: bold;">
+					<td class="indent-level0">공공/금융 사업본부 계</td>
+					<td class="text-align-right font-size-large">853.6</td>
+					<td class="text-align-right font-size-large">224.3</td>
+					<td class="text-align-right font-size-large">56.8</td>
+					<td class="text-align-right font-size-large">25.3%</td>
+					<td class="text-align-right background-green font-size-large">6.7%</td>
+					<td class="text-align-right font-size-large">589.6</td>
+					<td class="text-align-right font-size-large">139.0</td>
+					<td class="text-align-right background-green font-size-large">23.6%</td>
+					<td class="text-align-right font-size-large">243.2</td>
+					<td class="text-align-right background-green font-size-large">28.5%</td>
+					<td class="text-align-right font-size-large">267.8</td>
+					<td class="text-align-right background-green font-size-large">45.4%</td>
+				</tr>
+				<tr>
+					<td class="indent-level1"><a href="/vrb/app/weekly?selectedTeamId=0100000148"> 금융사업 </a></td>
+					<td class="text-align-right font-size-large">48.2</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">-</td>
+					<td class="text-align-right background-wheat font-size-large">0.0%</td>
+					<td class="text-align-right font-size-large">58.0</td>
+					<td class="text-align-right font-size-large">22.4</td>
+					<td class="text-align-right background-wheat font-size-large">38.6%</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right background-wheat font-size-large">0.0%</td>
+					<td class="text-align-right font-size-large">22.4</td>
+					<td class="text-align-right background-wheat font-size-large">38.6%</td>
+				</tr>
+				<tr style="background-color: #e3e3e3; font-weight: bold;">
+					<td class="indent-level1">공공1사업부 계</td>
+					<td class="text-align-right font-size-large">469.9</td>
+					<td class="text-align-right font-size-large">206.3</td>
+					<td class="text-align-right font-size-large">56.8</td>
+					<td class="text-align-right font-size-large">27.5%</td>
+					<td class="text-align-right background-wheat font-size-large">12.1%</td>
+					<td class="text-align-right font-size-large">331.4</td>
+					<td class="text-align-right font-size-large">104.3</td>
+					<td class="text-align-right background-wheat font-size-large">31.5%</td>
+					<td class="text-align-right font-size-large">150.8</td>
+					<td class="text-align-right background-wheat font-size-large">32.1%</td>
+					<td class="text-align-right font-size-large">168.9</td>
+					<td class="text-align-right background-wheat font-size-large">51.0%</td>
+				</tr>
+				<tr style="background-color: #e3e3e3; font-weight: bold;">
+					<td class="indent-level2">공공1담당 계</td>
+					<td class="text-align-right font-size-large">256.5</td>
+					<td class="text-align-right font-size-large">96.9</td>
+					<td class="text-align-right font-size-large">1.6</td>
+					<td class="text-align-right font-size-large">1.7%</td>
+					<td class="text-align-right background-wheat font-size-large">0.6%</td>
+					<td class="text-align-right font-size-large">191.9</td>
+					<td class="text-align-right font-size-large">49.2</td>
+					<td class="text-align-right background-wheat font-size-large">25.6%</td>
+					<td class="text-align-right font-size-large">33.3</td>
+					<td class="text-align-right background-wheat font-size-large">13.0%</td>
+					<td class="text-align-right font-size-large">70.9</td>
+					<td class="text-align-right background-wheat font-size-large">37.0%</td>
+				</tr>
+				<tr>
+					<td class="indent-level3"><a href="/vrb/app/weekly?selectedTeamId=0100000229"> 교육/문화사업 </a></td>
+					<td class="text-align-right font-size-large">159.5</td>
+					<td class="text-align-right font-size-large">80.2</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">0.0%</td>
+					<td class="text-align-right background-wheat font-size-large">0.0%</td>
+					<td class="text-align-right font-size-large">102.0</td>
+					<td class="text-align-right font-size-large">34.7</td>
+					<td class="text-align-right background-wheat font-size-large">34.0%</td>
+					<td class="text-align-right font-size-large">15.9</td>
+					<td class="text-align-right background-wheat font-size-large">10.0%</td>
+					<td class="text-align-right font-size-large">40.6</td>
+					<td class="text-align-right background-wheat font-size-large">39.8%</td>
+				</tr>
+				<tr>
+					<td class="indent-level3"><a href="/vrb/app/weekly?selectedTeamId=0100000230"> 법무/사법사업 </a></td>
+					<td class="text-align-right font-size-large">97.0</td>
+					<td class="text-align-right font-size-large">16.7</td>
+					<td class="text-align-right font-size-large">1.6</td>
+					<td class="text-align-right font-size-large">9.7%</td>
+					<td class="text-align-right background-wheat font-size-large">1.7%</td>
+					<td class="text-align-right font-size-large">89.9</td>
+					<td class="text-align-right font-size-large">14.5</td>
+					<td class="text-align-right background-wheat font-size-large">16.1%</td>
+					<td class="text-align-right font-size-large">17.4</td>
+					<td class="text-align-right background-wheat font-size-large">18.0%</td>
+					<td class="text-align-right font-size-large">30.3</td>
+					<td class="text-align-right background-wheat font-size-large">33.7%</td>
+				</tr>
+				<tr style="background-color: #e3e3e3; font-weight: bold;">
+					<td class="indent-level2">공공2담당 계</td>
+					<td class="text-align-right font-size-large">213.4</td>
+					<td class="text-align-right font-size-large">109.4</td>
+					<td class="text-align-right font-size-large">55.2</td>
+					<td class="text-align-right font-size-large">50.4%</td>
+					<td class="text-align-right background-wheat font-size-large">25.8%</td>
+					<td class="text-align-right font-size-large">139.6</td>
+					<td class="text-align-right font-size-large">55.2</td>
+					<td class="text-align-right background-wheat font-size-large">39.5%</td>
+					<td class="text-align-right font-size-large">117.4</td>
+					<td class="text-align-right background-wheat font-size-large">55.0%</td>
+					<td class="text-align-right font-size-large">98.0</td>
+					<td class="text-align-right background-wheat font-size-large">70.2%</td>
+				</tr>
+				<tr>
+					<td class="indent-level3"><a href="/vrb/app/weekly?selectedTeamId=0100000231"> 국토/지방사업 </a></td>
+					<td class="text-align-right font-size-large">105.1</td>
+					<td class="text-align-right font-size-large">56.1</td>
+					<td class="text-align-right font-size-large">18.6</td>
+					<td class="text-align-right font-size-large">33.2%</td>
+					<td class="text-align-right background-wheat font-size-large">17.7%</td>
+					<td class="text-align-right font-size-large">69.4</td>
+					<td class="text-align-right font-size-large">18.6</td>
+					<td class="text-align-right background-wheat font-size-large">26.9%</td>
+					<td class="text-align-right font-size-large">80.9</td>
+					<td class="text-align-right background-wheat font-size-large">77.0%</td>
+					<td class="text-align-right font-size-large">61.5</td>
+					<td class="text-align-right background-wheat font-size-large">88.6%</td>
+				</tr>
+				<tr>
+					<td class="indent-level3"><a href="/vrb/app/weekly?selectedTeamId=0100000232"> 산업통상/SM사업 </a></td>
+					<td class="text-align-right font-size-large">108.3</td>
+					<td class="text-align-right font-size-large">53.3</td>
+					<td class="text-align-right font-size-large">36.5</td>
+					<td class="text-align-right font-size-large">68.5%</td>
+					<td class="text-align-right background-wheat font-size-large">33.7%</td>
+					<td class="text-align-right font-size-large">70.2</td>
+					<td class="text-align-right font-size-large">36.5</td>
+					<td class="text-align-right background-wheat font-size-large">52.0%</td>
+					<td class="text-align-right font-size-large">36.5</td>
+					<td class="text-align-right background-wheat font-size-large">33.7%</td>
+					<td class="text-align-right font-size-large">36.5</td>
+					<td class="text-align-right background-wheat font-size-large">52.0%</td>
+				</tr>
+				<tr style="background-color: #e3e3e3; font-weight: bold;">
+					<td class="indent-level1">공공2사업부 계</td>
+					<td class="text-align-right font-size-large">335.5</td>
+					<td class="text-align-right font-size-large">18.0</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">0.0%</td>
+					<td class="text-align-right background-wheat font-size-large">0.0%</td>
+					<td class="text-align-right font-size-large">200.2</td>
+					<td class="text-align-right font-size-large">12.3</td>
+					<td class="text-align-right background-wheat font-size-large">6.1%</td>
+					<td class="text-align-right font-size-large">92.4</td>
+					<td class="text-align-right background-wheat font-size-large">27.5%</td>
+					<td class="text-align-right font-size-large">76.5</td>
+					<td class="text-align-right background-wheat font-size-large">38.2%</td>
+				</tr>
+				<tr>
+					<td class="indent-level2"><a href="/vrb/app/weekly?selectedTeamId=0100000234"> 행정/재정사업 </a></td>
+					<td class="text-align-right font-size-large">187.0</td>
+					<td class="text-align-right font-size-large">18.0</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">0.0%</td>
+					<td class="text-align-right background-wheat font-size-large">0.0%</td>
+					<td class="text-align-right font-size-large">91.4</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right background-wheat font-size-large">0.0%</td>
+					<td class="text-align-right font-size-large">46.9</td>
+					<td class="text-align-right background-wheat font-size-large">25.1%</td>
+					<td class="text-align-right font-size-large">46.9</td>
+					<td class="text-align-right background-wheat font-size-large">51.3%</td>
+				</tr>
+				<tr>
+					<td class="indent-level2"><a href="/vrb/app/weekly?selectedTeamId=0100000235"> 복지/사회사업 </a></td>
+					<td class="text-align-right font-size-large">148.5</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">-</td>
+					<td class="text-align-right background-wheat font-size-large">0.0%</td>
+					<td class="text-align-right font-size-large">108.8</td>
+					<td class="text-align-right font-size-large">12.3</td>
+					<td class="text-align-right background-wheat font-size-large">11.3%</td>
+					<td class="text-align-right font-size-large">45.5</td>
+					<td class="text-align-right background-wheat font-size-large">30.7%</td>
+					<td class="text-align-right font-size-large">29.7</td>
+					<td class="text-align-right background-wheat font-size-large">27.3%</td>
+				</tr>
+				<tr>
+					<td colspan="13" style="height: 10px; border-style: none;"></td>
+				</tr>
+				<tr style="background-color: #e3e3e3; font-weight: bold;">
+					<td class="indent-level0">국방/u-Biz 사업본부 계</td>
+					<td class="text-align-right font-size-large">295.3</td>
+					<td class="text-align-right font-size-large">50.9</td>
+					<td class="text-align-right font-size-large">16.0</td>
+					<td class="text-align-right font-size-large">31.3%</td>
+					<td class="text-align-right background-green font-size-large">5.4%</td>
+					<td class="text-align-right font-size-large">260.5</td>
+					<td class="text-align-right font-size-large">47.1</td>
+					<td class="text-align-right background-green font-size-large">18.1%</td>
+					<td class="text-align-right font-size-large">106.5</td>
+					<td class="text-align-right background-green font-size-large">36.1%</td>
+					<td class="text-align-right font-size-large">84.6</td>
+					<td class="text-align-right background-green font-size-large">32.5%</td>
+				</tr>
+				<tr>
+					<td class="indent-level1"><a href="/vrb/app/weekly?selectedTeamId=0100000049"> u-Biz사업 </a></td>
+					<td class="text-align-right font-size-large">50.3</td>
+					<td class="text-align-right font-size-large">17.4</td>
+					<td class="text-align-right font-size-large">16.0</td>
+					<td class="text-align-right font-size-large">91.7%</td>
+					<td class="text-align-right background-wheat font-size-large">31.7%</td>
+					<td class="text-align-right font-size-large">60.2</td>
+					<td class="text-align-right font-size-large">34.1</td>
+					<td class="text-align-right background-wheat font-size-large">56.7%</td>
+					<td class="text-align-right font-size-large">18.6</td>
+					<td class="text-align-right background-wheat font-size-large">36.9%</td>
+					<td class="text-align-right font-size-large">36.7</td>
+					<td class="text-align-right background-wheat font-size-large">61.0%</td>
+				</tr>
+				<tr style="background-color: #e3e3e3; font-weight: bold;">
+					<td class="indent-level1">국방사업부 계</td>
+					<td class="text-align-right font-size-large">244.9</td>
+					<td class="text-align-right font-size-large">33.5</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">0.0%</td>
+					<td class="text-align-right background-wheat font-size-large">0.0%</td>
+					<td class="text-align-right font-size-large">200.3</td>
+					<td class="text-align-right font-size-large">13.0</td>
+					<td class="text-align-right background-wheat font-size-large">6.5%</td>
+					<td class="text-align-right font-size-large">87.9</td>
+					<td class="text-align-right background-wheat font-size-large">35.9%</td>
+					<td class="text-align-right font-size-large">47.8</td>
+					<td class="text-align-right background-wheat font-size-large">23.9%</td>
+				</tr>
+				<tr style="background-color: #e3e3e3; font-weight: bold;">
+					<td class="indent-level2">국방사업담당 계</td>
+					<td class="text-align-right font-size-large">244.9</td>
+					<td class="text-align-right font-size-large">33.5</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">0.0%</td>
+					<td class="text-align-right background-wheat font-size-large">0.0%</td>
+					<td class="text-align-right font-size-large">200.3</td>
+					<td class="text-align-right font-size-large">13.0</td>
+					<td class="text-align-right background-wheat font-size-large">6.5%</td>
+					<td class="text-align-right font-size-large">87.9</td>
+					<td class="text-align-right background-wheat font-size-large">35.9%</td>
+					<td class="text-align-right font-size-large">47.8</td>
+					<td class="text-align-right background-wheat font-size-large">23.9%</td>
+				</tr>
+				<tr>
+					<td class="indent-level3"><a href="/vrb/app/weekly?selectedTeamId=0100000143"> 국방사업 </a></td>
+					<td class="text-align-right font-size-large">244.9</td>
+					<td class="text-align-right font-size-large">33.5</td>
+					<td class="text-align-right font-size-large">0.0</td>
+					<td class="text-align-right font-size-large">0.0%</td>
+					<td class="text-align-right background-wheat font-size-large">0.0%</td>
+					<td class="text-align-right font-size-large">200.3</td>
+					<td class="text-align-right font-size-large">13.0</td>
+					<td class="text-align-right background-wheat font-size-large">6.5%</td>
+					<td class="text-align-right font-size-large">87.9</td>
+					<td class="text-align-right background-wheat font-size-large">35.9%</td>
+					<td class="text-align-right font-size-large">47.8</td>
+					<td class="text-align-right background-wheat font-size-large">23.9%</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+<script>
+	$("#excelBtn").click(
+			function(e) {
+		        var url = "app/excel";
+		        var inputs ='<input type="hidden" name="htmlData" value="' + encodeURIComponent($("#mainGrid").html()) + '"/>';
+		        jQuery('<form action="'+ url +'" method="post">'+inputs+'</form>').appendTo('body').submit().remove();
+				
+//				window.open('data:application/vnd.ms-excel,' + encodeURIComponent($('#mainGrid').html()));
+//				e.preventDefault();
+			});
+</script>
+</html>

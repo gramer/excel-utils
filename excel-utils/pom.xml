@@ -11,7 +11,16 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 
-
+	<distributionManagement>
+		<repository>
+			<id>repo</id>
+			<url>https://github.com/gramer2188/excel-utils/raw/master/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshot-repo</id>
+			<url>https://github.com/gramer2188/excel-utils/raw/master/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<repositories>
 		<repository>
