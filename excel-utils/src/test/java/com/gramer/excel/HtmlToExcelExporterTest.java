@@ -10,6 +10,7 @@ import org.junit.Test;
 
 import com.google.common.base.Charsets;
 import com.google.common.io.Files;
+import com.gramer.excel.html.HtmlToExcelExporter;
 
 public class HtmlToExcelExporterTest {
 

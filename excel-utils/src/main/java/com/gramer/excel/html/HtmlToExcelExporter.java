@@ -1,4 +1,4 @@
-package com.gramer.excel;
+package com.gramer.excel.html;
 
 import java.io.IOException;
 import java.io.OutputStream;
